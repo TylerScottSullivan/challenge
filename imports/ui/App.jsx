@@ -108,7 +108,7 @@ class App extends Component {
     }
   }
 
-  // gets list of locations within max distance
+  // gets list of locations within max distance, sets state
   _buttonClick() {
 
     // if address input displayed, calls google geoccode api, gets longitude and latitude of address
@@ -141,7 +141,7 @@ class App extends Component {
     } 
   }
 
-  // calculates distance from user input location and database locations
+  // calculates distance from user input location and database locations, returns locations witihin max distance
   _findResults(latitude, longitude) {
     let mylat = this._dToRad(latitude)
     let mylong = this._dToRad(longitude)
