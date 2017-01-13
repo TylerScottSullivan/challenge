@@ -7,7 +7,7 @@ const LocationsList = (props) => {
             <div className="list-title">Locations Found</div>
             <ol>
               {props.locations.map((location, key) => 
-                <li key={key}> <p> {location.street_number} {location.route} {location.locality}, {location.administrativeArea}, {location.country} {location.postalCode} </p> ( {location.distance} miles away) </li>)
+                <li key={key}> <p> {location.street_number} {location.route}, {location.locality}, {location.administrativeArea}, {location.country} {location.postalCode} </p> ( {location.distance} miles away) </li>)
               }
 
             </ol>
