@@ -1,1 +1,190 @@
-/* CSS declarations go here */
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border:none;
+  color: white;
+  background: #0dbf63;
+  padding: 10px 20px;
+  font-size: 18px;
+  align-self: center;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 2px;
+}
+
+button:focus {
+  outline: none;
+}
+
+label {
+  width: 30px;
+  font-size: 16px;
+  padding-bottom: 5px;
+}
+
+input {
+  width: 400px;
+  height: 30px;
+  padding-left: 5px;
+  font-size: 16px;
+  border: none;
+  border: solid 1px #dddddd;
+  border-radius: 2px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  transition: border-color 0.5s ease;
+}
+
+input:focus {
+  outline: #0dbf63;
+  border-color: #0dbf63;
+}
+
+ol > li {
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+li > p {
+	font-weight: normal;
+}
+
+ol {
+  align-self: center;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  margin-top: 30px;
+  padding: 20px 0;
+  color: white;
+  background: purple;
+}
+
+.description {
+  width: 400px;
+  padding: 20px;
+  align-self: center;
+  text-align: center;
+}
+
+.toggle {
+  display: flex;
+  justify-content: center;
+}
+
+.toggle > button {
+  width: 140px;
+}
+
+#inactive {
+  background: #dddddd;
+}
+
+.inputs-container {
+  align-self: center;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.transition-container {
+	max-height: 70px;
+}
+
+.inputs-transition-enter {
+	opacity: 0.01;
+}
+
+.inputs-transition-enter.inputs-transition-enter-active {
+	opacity: 1;
+	transition: opacity 500ms ease-in;
+}
+
+.inputs-transition-leave {
+	opacity: 0.01;
+	display: none;
+}
+
+.inputs-transition-leave.inputs-transition-leave-active {
+	transition: opacity 1ms;
+	display: none;
+}
+
+.inputs-transition-num2-enter {
+	opacity: 0.01;
+}
+
+.inputs-transition-num2-enter.inputs-transition-num2-enter-active {
+	opacity: 1;
+	transition: opacity 900ms ease-in;
+}
+
+.inputs-transition-num2-leave {
+	opacity: 0.01;
+	display: none;
+}
+
+.inputs-transition-num2-leave.inputs-transition--num2-leave-active {
+	transition: opacity 1ms;
+	display: none;
+}
+
+.input {
+  align-self: left;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.latlong-container {
+  display: flex;
+  justify-content: center;
+}
+
+.latlong-container > div > input , .latlong-container > div > .error {
+  width: 192px;
+}
+
+#distance-input {
+	margin-top: 20px;
+}
+
+.submit:hover {
+  background: #0b8948;
+}
+
+.locations {
+  align-self: center;
+  width: 600px;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-title {
+  font-weight: bold;
+  font-size: 18px;
+  align-self: center;
+}
+
+.error {
+  color: purple;
+  padding-top: 3px;
+  font-size: 12px;
+}
